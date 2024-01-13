@@ -119,11 +119,29 @@ nav a {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
+.brand_container {
+  width: 69%;
+  max-width: 990px;
+  margin: 112px auto 140px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  column-gap: 60px;
+}
+
+.brand_container img {
+  width: 100%;
+}
+
 /* ! responsive for tablet */
 @media screen and (max-width: 920px) {
-    .container {
-        width: 88%;
-    }
+  .container {
+    width: 88%;
+  }
   nav > ul {
     display: none;
   }
@@ -140,6 +158,16 @@ nav a {
   }
   .banner_btn {
     font-weight: 600;
+  }
+  .brand_container {
+    width: 88%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px 35px;
+    margin-top: 70px;
+    align-items: center;
+  }
+  .brand_container img {
+    width: 100%;
   }
 }
 
@@ -177,5 +205,16 @@ nav a {
     align-self: center;
     font-weight: 500;
     font-size: 1rem;
+  }
+  /* ? brand section */
+  .brand_container {
+    width: 92%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 28px;
+    margin-top: 53px;
+    align-items: center;
+  }
+  .brand_container img {
+    width: 100%;
   }
 }
