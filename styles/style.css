@@ -110,3 +110,72 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
 }
+.banner_img img {
+  width: 100%;
+}
+
+.toggle_bar,
+.cart {
+  display: none;
+}
+
+/* ! responsive for tablet */
+@media screen and (max-width: 920px) {
+    .container {
+        width: 88%;
+    }
+  nav > ul {
+    display: none;
+  }
+  .toggle_bar,
+  .cart {
+    display: block;
+  }
+  .banner_title {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .banner_desc {
+    font-size: 18px;
+  }
+  .banner_btn {
+    font-weight: 600;
+  }
+}
+
+/* ! responsive for mobile */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 92%;
+  }
+  nav > ul {
+    display: none;
+  }
+  .toggle_bar,
+  .cart {
+    display: block;
+  }
+  nav .logo {
+    font-size: 16px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner_title {
+    margin-top: 30px;
+    font-size: 28px;
+    max-width: 404px;
+    line-height: normal;
+    text-align: center;
+  }
+  .banner_desc {
+    font-size: 14px;
+    text-align: center;
+  }
+  .banner_btn {
+    align-self: center;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
