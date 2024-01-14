@@ -120,7 +120,7 @@ nav a {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /* ! brand section style */
@@ -207,6 +207,73 @@ nav a {
   margin-top: 6px;
 }
 
+.see_more_btn {
+  display: block;
+  margin: 50px 0 0 auto;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+}
+
+/* !  product section */
+.product_container {
+  width: 77%;
+  max-width: 1110px;
+  margin: 100px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+
+.product_img {
+  width: 404px;
+  height: 270px;
+  background-image: url("../images/gear.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+}
+.product_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product_title {
+  color: #0a0826;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.product_desc {
+  color: #6c6c6c;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  max-width: 501px;
+}
+
+.join_now_btn {
+  padding: 10px 24px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  background: #e02c6d;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ! responsive for tablet */
 @media screen and (max-width: 992px) {
   .container {
@@ -236,6 +303,9 @@ nav a {
   }
   .cards_container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .see_more_btn {
+    margin: 50px auto 0 0;
   }
 }
 
@@ -306,5 +376,42 @@ nav a {
 
   .brand_container {
     margin: 112px auto 54px;
+  }
+  .see_more_btn {
+    margin: 32px 0 0 auto;
+  }
+
+  /* ? product section */
+
+  .product_container {
+    width: 92%;
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .product_img {
+    width: 100%;
+  }
+
+  .product_title {
+    color: #0a0826;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .product_desc {
+    color: #6c6c6c;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 329px;
+  }
+  .join_now_btn {
+    align-self: center;
+    margin-top: 1rem;
   }
 }
